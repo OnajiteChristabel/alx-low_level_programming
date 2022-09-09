@@ -1,25 +1,25 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- *main - print 0-9 separated with commas, using putchar
- *Return: Always 0 (Success)
+ * main - Entry point
+ * Description: prints numbers
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int n = '0';
+	int i;
 
-	while (n <= '9')
+	for (i = '0'; i <= '9' ; i++)
 	{
-		putchar(n);
-		if (n != '9')
+		putchar(i);
+
+		if (i != '9')
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		n++;
 	}
-	putchar('\n');
 
+	putchar('\n');
 	return (0);
 }
