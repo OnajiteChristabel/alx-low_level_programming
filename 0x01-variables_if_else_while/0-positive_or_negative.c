@@ -1,28 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <unistd.h>
 /**
- * main - entry point
- * Description: prints  if a number is positive or negative.
- * Return: 0
+ * main - Entry point
+ * Description: prints numbers
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int n;
+	int i;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	for (i = '0'; i <= '9' ; i++)
 	{
-		printf("%d is positive\n", n);
+		putchar(i);
+
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else if (n < 0)
-	{
-		printf("%d is negative\n", n);
-	}
+
+	putchar('\n');
 	return (0);
 }
