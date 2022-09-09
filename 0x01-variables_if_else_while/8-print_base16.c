@@ -1,28 +1,24 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- *main - prints hexadecimal base 0123456789abcdef, using putchar
- *Expected Return: Always 0 (Success)
+ * main - Entry point
+ * Description: Print base 16 numbers
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int n = '0';
-	int aphal = 'a';
+	char c;
+	char d = '0';
 
-	while (n <= '9') /*print 0-9*/
+	while (d <= '9')
 	{
-		putchar(n);
-		n++;
+		putchar(d);
+		d++;
 	}
-
-	while (aphal <= 'f') /*print aphal to finish hexbase*/
+	for (c = 'a'; c <= 'f'; c++)
 	{
-		putchar(aphal);
-		aphal++;
+		putchar(c);
 	}
-
 	putchar('\n');
-
 	return (0);
 }

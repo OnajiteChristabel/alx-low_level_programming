@@ -1,20 +1,19 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- *main - print 0123456789
- *Return: Always 0 (Success)
+ * main -Entry point
+ * Description: prints allsingle digit numbers of
+ * base 10 from 0
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int n = 0;
+	int a;
 
-	while (n < 10)
+	for (a = 0; a < 10; a++)
 	{
-		printf("%i", n);
-		n++;
+		printf("%d", a);
 	}
 	putchar('\n');
-
 	return (0);
 }

@@ -1,21 +1,19 @@
 
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- *main - print lowercase a-z
- *Return: Always 0 (Success)
+ * main - Entry point
+ * Description: prints the alphabet in lowercase\n
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char alpha = 'a';
+	int ch;
 
-	while (alpha <= 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		putchar(alpha);
-		alpha++;
+		putchar(ch);
 	}
 	putchar('\n');
-
-	return (0);
+return (0);
 }

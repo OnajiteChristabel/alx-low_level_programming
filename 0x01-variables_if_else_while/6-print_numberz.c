@@ -1,20 +1,18 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- *main - print 0123456789 using putchar
- *Return: Always 0 (Success)
+ * main - Entry point
+ * Description: prints char below 10
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int n = '0';
+	int a;
 
-	while (n <= '9')
+	for (a = 0; a < 10; a++)
 	{
-		putchar(n);
-		n++;
+		putchar(a + '0');
 	}
 	putchar('\n');
-
 	return (0);
 }

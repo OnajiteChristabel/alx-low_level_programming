@@ -1,23 +1,24 @@
 #include <stdio.h>
-
+#include <unistd.h>
 /**
- *main - print lowercase alpha a-z but remove 'q' and 'e'
- *Return: Always 0 (Success)
+ * main - Entry point
+ * Description: prints lowercase alphabets
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	char alpha = 'a';
+	int ch;
 
-	while (alpha <= 'z')
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if ((alpha != 'q') && (alpha != 'e'))
+		if (ch != 'e' && ch != 'q')
 		{
-			putchar(alpha);
+			putchar(ch);
 		}
-		alpha++;
+		else
+		{
+		}
 	}
 	putchar('\n');
-
 	return (0);
 }
