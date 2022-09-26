@@ -1,6 +1,7 @@
 #include "main.h"
 
 /*
+ * *_memset - some buffers
  * return s
  */
 
