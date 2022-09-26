@@ -1,6 +1,3 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
-
 /**
  * _putchar - puts character to standard output
  * @c: character to put to standard output
@@ -87,4 +84,3 @@ void print_diagsums(int *a, int size);
 
 void set_string(char **s, char *to);
 
-#endif
