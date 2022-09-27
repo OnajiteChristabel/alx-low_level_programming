@@ -10,7 +10,7 @@
  */
 >>>>>>> 6dc5214090d6215d72b837185237009c1ab33e2e
 
-int _putchar(char c)
+int _putchar(char c);
 char *_memset(char *s, char b, unsigned int n);
 char *_memcpy(char *dest, char *src, unsigned int n);
 char *_strchr(char *s, char c);
