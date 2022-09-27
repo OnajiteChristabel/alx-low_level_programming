@@ -1,4 +1,8 @@
 #include "main.h"
+<<<<<<< HEAD
+=======
+#define NULL 0
+>>>>>>> 6dc5214090d6215d72b837185237009c1ab33e2e
 
 /**
  * _strchr - Locates a character in a string.
