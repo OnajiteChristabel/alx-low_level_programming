@@ -1,38 +1,23 @@
-#include "holberton.h"
-#define NULL 0
+#include "main.h"
 
 /**
- * _strchr - locate 1st occurrence of char in string and returns pointer there
- * @s: string to search
- * @c: target characer
- * Return: pointer to that character in string
+ * _strchr - Locates a character in a string.
+ * @s: The string to be searched.
+ * @c: The character to be located.
+ *
+ * Return: If c is found - a pointer to the first occurence.
+ * If c is not found - NULL.
  */
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int index;
 
-	while (s[i] != '\0' && s[i] != c) /* find match */
-		i++;
+	for (index = 0; s[index] >= '\0'; index++)
+	{
+		if (s[index] == c)
+			return (s + index);
+	}
 
-	if (s[i] == c) /* if match, assign to address */
-		return (&s[i]);
-	else
-		return (NULL);
+	return ('\0');
 }
-
-/* pointer arithmetic version
-
-char *_strchr(char *s, char c)
-{
-        int i = 0;
-
-	while (*(s + i) && *(s + i) != c)
-	    i++;
-
-	if (*(s + i) == c)
-	    return (s + i);
-	else
-	    return (NULL);
-}
-*/

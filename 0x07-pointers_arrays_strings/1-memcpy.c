@@ -1,44 +1,20 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _memcpy - copy n bytes of memory from source to destination
- * @dest: destination
+ * *_memcpy - copies memory area
+ * @dest: memory area
  * @src: source
- * @n: number of bytes
- * Return: pointer to dest
+ * @n: length of src
+ *
+ * Return: pointer to dest.
  */
-
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
+	unsigned int i;
 
-	int size = n; /* only accept positive sizes */
-
-	if (size > 0)
+	for (i = 0; i < n; i++)
 	{
-		int i;
-
-		for (i = 0; i < size; i++)
-			dest[i] = src[i];
+		dest[i] = src[i];
 	}
-
 	return (dest);
 }
-
-/* pointer arithmetic version
-
-char *_memcpy(char *dest, char *src, unsigned int n)
-{
-
-   int size = n;
-
-   if (size > 0)
-   {
-	int i;
-
-	for (i = 0; i < size; i++)
-		*(dest + i) = *(src + i);
-   }
-
-   return (dest);
-}
-*/
