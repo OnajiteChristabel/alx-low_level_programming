@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
- * print_name - prints name
- * @name: name
- * @f: func
+ * print_name - execute a function given as a parameter
+ * @name: parameter that function ptr needs
+ * @f:function to execute
+ *
  */
 
 void print_name(char *name, void (*f)(char *))
