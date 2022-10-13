@@ -15,4 +15,8 @@ int main(void)
     sum = sum_them_all(4, 98, 1024, 402, -1024);
     printf("%d\n", sum);    
     return (0);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c813b95e88b1939967b005ac0954cb75787c4356
