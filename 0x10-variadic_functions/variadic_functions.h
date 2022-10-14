@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-int sum_them_all(const unsigned int n, ...);
-void print_numbers(const char *separator, const unsigned int n, ...);
-void print_strings(const char *separator, const unsigned int n, ...);
-=======
 #ifndef VARIADIC_FUNCTIONS
 #define VARIADIC_FUNCTIONS
 
@@ -26,4 +21,3 @@ typedef struct dt
 } datatype;
 
 #endif
->>>>>>> c813b95e88b1939967b005ac0954cb75787c4356
