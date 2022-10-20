@@ -1,13 +1,13 @@
 #include "lists.h"
 
 /**
- * free_listint - frees a linked list
+ * free_list - frees a linked list
  * @head: linked list
  */
 
-void free_listint(listint_t *head)
+void free_list(list_t *head)
 {
-	listint_t *ptr;
+	list_t *ptr;
 
 	if (head == NULL) /* account for no linked list */
 		return;
