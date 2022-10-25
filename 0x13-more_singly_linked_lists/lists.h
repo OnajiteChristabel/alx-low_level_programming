@@ -30,4 +30,7 @@ size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
 size_t free_listint_safe(listint_t **h);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+void free_listint2(listint_t **head);
+listint_t *reverse_listint(listint_t **head);
 #endif
