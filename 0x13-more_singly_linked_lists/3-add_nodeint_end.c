@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint_end - end node
- * @h: head
+ * @head: head
  * @n: int
  * Return: node
  */

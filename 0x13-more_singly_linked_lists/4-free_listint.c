@@ -2,7 +2,7 @@
 
 /**
  * free_listint - frees nodes
- * @h: node
+ * @head: node
  */
 
 void free_listint(listint_t *head)
