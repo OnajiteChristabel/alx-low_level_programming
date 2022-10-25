@@ -3,6 +3,7 @@
 /**
  * pop_listint - pops
  * @head: node
+ * Return: vales
  */
 
 int pop_listint(listint_t **head)
