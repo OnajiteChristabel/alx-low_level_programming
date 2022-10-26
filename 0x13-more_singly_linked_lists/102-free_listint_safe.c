@@ -8,7 +8,7 @@ void free_listp2(listp_t **head)
 {
 	listp_t *temp;
 	listp_t *curr;
-	
+
 	if (head != NULL)
 	{
 		curr = *head;
@@ -29,9 +29,9 @@ void free_listp2(listp_t **head)
 size_t free_listint_safe(listint_t **h)
 {
 	size_t nnodes = 0;
-	listp_t *hptr,*new, *add;
+	listp_t *hptr, *new, *add;
 	listint_t *curr;
-	
+
 	hptr = NULL;
 	while (*h != NULL)
 {
