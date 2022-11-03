@@ -1,12 +1,6 @@
 #include "main.h"
 
 /**
-<<<<<<< HEAD
- * create_file - creates a file
- * @filename: filename
- * @text_content: content writed in the file
- * Return: 1 on success, -1 on failure
-=======
  * _strlen - find length of string
  * @str: string
  * Return: length
@@ -27,36 +21,15 @@ int _strlen(char *str)
  * @filename: name to give to new file
  * @text_content: writes this content into file
  * Return: 1 on success, -1 on error
->>>>>>> 0c5e210b372a7aa5b1cda4cd853b06e8052f2679
  */
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-<<<<<<< HEAD
-	int nletters;
-	int rwr;
-=======
 	int n_wrote;
->>>>>>> 0c5e210b372a7aa5b1cda4cd853b06e8052f2679
 
 	if (!filename)
 		return (-1);
 
-<<<<<<< HEAD
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
-
-	if (fd == -1)
-		return (-1);
-
-	if (!text_content)
-		text_content = "";
-
-	for (nletters = 0; text_content[nletters]; nletters++)
-		;
-	rwr = write(fd, text_content, nletters);
-		if (rwr == -1)
-			return (-1);
-=======
 	/* create with permissions if file doesn't exist, else truncate */
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
@@ -77,7 +50,6 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
->>>>>>> 0c5e210b372a7aa5b1cda4cd853b06e8052f2679
 	close(fd);
 	return (1);
 }
