@@ -1,10 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 388f9406589a11e5910489283c0f09c194b8dd5e
 /**
  * main - Generates and prints passwords for the crackme5 executable.
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 388f9406589a11e5910489283c0f09c194b8dd5e
  * Return: Always 0.
  */
 int main(int __attribute__((__unused__)) argc, char *argv[])
@@ -13,12 +21,20 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	int len = strlen(argv[1]), i, tmp;
 
 	codex = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 388f9406589a11e5910489283c0f09c194b8dd5e
 	tmp = (len ^ 59) & 63;
 	password[0] = codex[tmp];
 
 	tmp = 0;
 	for (i = 0; i < len; i++)
+<<<<<<< HEAD
 		tmp *= argv[1][i];
+=======
+		tmp += argv[1][i];
+>>>>>>> 388f9406589a11e5910489283c0f09c194b8dd5e
 	password[1] = codex[(tmp ^ 79) & 63];
 
 	tmp = 1;
