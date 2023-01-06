@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include "../hash_tables.h"
+#include "hash_tables.h"
 
 /**
  * main - check the code for ALX-Africa Cohort 5 Students.
@@ -32,3 +32,4 @@ int main(void)
 	shash_table_print_rev(ht);
 	shash_table_delete(ht);
 	return (EXIT_SUCCESS);
+}
