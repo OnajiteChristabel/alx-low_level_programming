@@ -60,7 +60,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	index = key_index((const unsigned char *)key, ht->size);
 	tmp = ht->shead;
 	while (tmp)
-        {
+	{
 		if (strcmp(tmp->key, key) == 0)
 		{
 			free(tmp->value);
@@ -130,15 +130,13 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	shash_node_t *node;
-        unsigned long int index;
-
+	unsigned long int index;
+	
 	if (ht == NULL || key == NULL || *key == '\0')
 		return (NULL);
-
 	index = key_index((const unsigned char *)key, ht->size);
 	if (index >= ht->size)
 		return (NULL);
-
 	node = ht->shead;
 	while (node != NULL && strcmp(node->key, key) != 0)
 		node = node->snext;
